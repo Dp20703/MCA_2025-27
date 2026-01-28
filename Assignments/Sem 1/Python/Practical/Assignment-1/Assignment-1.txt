@@ -1,0 +1,17 @@
+Assignment-2 (Deadline 15th September)
+Write python programs for following
+1) Display the difference in dates
+2) Display time since epoch in hours and minutes
+3) Display your age in years, months and days
+4) Display trigonometric table of sin, cos and tan
+5) Generate 10 random numbers
+6) Authentication Ask username, password and compare
+7) Authentication Ask username, password and compare with encryption
+8) Authentication Ask username, password and compare with hashing
+9) Convert string Hello$World into Base64
+10) Code for String Manipulation 
+     (Implement all from  httpspynative.compython-string-exercise#h-exercise-11-reverse-a-given-string)
+
+Extra
+11) Authentication Ask username, password and compare with encryption (DESAES algo)
+12) Authentication Ask username, password and compare with encryption (RSA algo)
