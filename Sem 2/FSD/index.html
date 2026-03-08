@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Script 1</title>
+</head>
+
+<body>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="enter your name">
+    <select id="sel">
+        <script>
+            const text = document.getElementById("name")
+            const select = document.getElementById("sel")
+            for (let i = 0; i < 10; i++) {
+                select.innerHTML += `<option value="${i}">${i}px</option>`;
+            }
+            text.style.fontSize = select.value + "px";
+
+        </script>
+        </option>
+    </select>
+
+</body>
+
+</html>
