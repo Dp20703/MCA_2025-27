@@ -1,0 +1,17 @@
+Create a bash file and add the following script. 
+This script will take the filename from the command line argument. 
+First argument value is read by the variable $1 which will contain the filename for reading. 
+If the file exists in the current location then while loop will read the file line by line and print the file content.
+
+
+filename=$1
+
+if [ -f "$filename" ]
+then
+    while read line
+    do
+        echo "$line"
+    done < "$filename"
+else
+    echo "File does not exist"
+fi
