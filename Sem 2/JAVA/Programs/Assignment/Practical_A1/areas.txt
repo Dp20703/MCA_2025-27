@@ -1,0 +1,4 @@
+Circle Area: 1963.4954084936207
+Rectangle Area: 1256.6370614359173
+Triangle Area: 100.0
+Circle Area: 3.141592653589793

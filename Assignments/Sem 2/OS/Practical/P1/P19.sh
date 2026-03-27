@@ -14,6 +14,6 @@ cmp -s "$f1" "$f2"
 if [ $? -eq 0 ];then
 	echo "Files are identical."
 	rm "$f2"
-else
+else		
 	echo "Files are different"
 fi
