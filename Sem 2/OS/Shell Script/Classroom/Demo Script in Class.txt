@@ -1,0 +1,164 @@
+1. Create a text file as follows:
+Name,Team,First Test, Second Test, Third Test
+Tejas,Red,5,17,22
+Jignesh,Green,3,14,22
+Manish,Blue,6,18,21
+Fredy,Blue,2,15,23
+Chintan,Red,1,15,24
+Pritesh,Green,7,19,21
+Imran,Green,3,16,20
+Nevil,Red,9,12,24
+Write an awk script that will compute the average score for every person in the list, 
+the average score for each test, and the Total score for each team.
+
+BEGIN{
+        printf "%-10s %-7s","Name","Average"
+        printf "\n%-10s %-7s","----","-------"
+	   p_avg_red=0
+ 	   p_avg_green=0
+	   p_avg_blue=0
+}
+{
+        p_avg=0
+	   		
+        if($3 > 0)
+        {
+                p_avg=$3
+        }
+        if($4 > 0)
+        {
+                p_avg+=$4
+        }
+        if($5 > 0)
+        {
+                p_avg+=$5
+        }
+        if($2 == "Blue")
+        {
+                p_avg_blue+=p_avg
+        }
+        if($2 == "Green")
+        {
+                p_avg_green+=p_avg
+        }
+        if($2 == "Red")
+        {
+                p_avg_red+=p_avg
+        }
+
+        printf "\n%-10s%7.2f\n",$1,p_avg/3
+
+}
+END{
+           printf "Red Sum : %-10.2f",p_avg_red
+	   printf "Blue Sum : %-10.2f",p_avg_blue
+	   printf "Green Sum : %-10.2f",p_avg_green
+}
+
+
+
+
+
+
+
+//
+
+2. Prepare a mark sheet printing application where the input data is a csv file with the fields as Examno, name, #course, semester, year, sub1mks, sub2mks, sub3mks, sub4mks, sub5mks, sub6mks. Compute Total, percentage and grade #(as per your convention e.g. percent>=80 mean A+ grade, between 70 and 80 mean A-, between 60 and 70 mean A, then #B and so on) and print it on the marksheet with appropriate formatting. 
+{
+	if(NR>2){
+        print "----------------------------------"
+        print "Exam No :",$1," Course :",$3
+        print "Semester :"$4," Year:",$5
+        print "Name :",$2
+        print "Marks :",$6,$7,$8,$9,$10,$11
+        print "Total :",$6+$7+$8+$9+$10+$11
+        per=($6+$7+$8+$9+$10+$11) / 6
+        print "Percentage :",per
+        if(per>=80)
+                print "Grade : A+"
+        else if (per>=70 && per < 80)
+                print "Grade : A-"
+        else if (per>=60 && per < 70)
+                print "Grade : A"
+        else if (per>=50 && per < 60)
+                print "Grade : B"
+        else if (per>=40 && per < 50)
+                print "Grade : C"
+        else if (per>35 && per < 40)
+                print "Grade : D"
+        else
+                print "Grade : Fail"
+
+        print "----------------------------------"
+}}
+
+
+//
+3. using awk
+ Display report using text file emp.txt(empid, empname, deptname, basic salary).
+ format 1:
+   
+  dept name:xxxxxxxxxxx
+   empid emp_name Basic_salary
+   99 xxxxxxxx 99999.99
+   99 xxxxxxxx 99999.99
+   99 xxxxxxxx 99999.99
+  -----------------------------------------
+  Total salary :   99999.99
+  -----------------------------------------
+  dept name:xxxxxxxxxxx
+   empid emp_name net_salary
+   99 xxxxxxxx 99999.99
+   99 xxxxxxxx 99999.99
+   99 xxxxxxxx 99999.99
+  -----------------------------------------
+  Total salary :   99999.99
+  -----------------------------------------
+
+for i in $(cut -d":" -f3 emp.txt | sort | uniq)
+do
+        echo "Dept Name: $i"
+        echo "EmpId Empname Net Salary"
+
+        awk -F":" -v deptname="$i" '
+        BEGIN {
+                total=0;
+        }
+        {
+                if ($3 == deptname)
+                {
+                        print $1 " " $2 " " $4;
+                        total += $4;
+                }
+        }
+        END {
+                print "=======================";
+                print "Total Salary: " total;
+                print "=======================";
+        }' emp.txt
+
+done
+
+
+===========OR============
+
+awk -F":" '
+{
+    dept[$3] = dept[$3] "\n" $1 " " $2 " " $4;
+    total[$3] += $4;
+}
+END {
+    for (d in dept)
+    {
+        print "dept name:" d;
+        print "empid emp_name Basic_salary";
+        print dept[d];
+        print "-----------------------------------------";
+        print "Total salary : " total[d];
+        print "-----------------------------------------";
+    }
+}' emp.txt
+
+
+
+

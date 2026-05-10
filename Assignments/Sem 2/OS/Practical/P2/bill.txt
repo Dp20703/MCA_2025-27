@@ -1,0 +1,4 @@
+bill_no:cust_no:cust_name:address:city:pin:current:previous:month
+101:201:Darshan Prajapati:Navrangpura:Ahmedabad:380009:850:750:Jan
+102:202:Ravi Patel:Vastrapur:Ahmedabad:380015:920:800:Jan
+103:203:Amit Shah:Maninagar:Ahmedabad:380008:780:700:Jan

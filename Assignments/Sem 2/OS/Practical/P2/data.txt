@@ -1,0 +1,3 @@
+John:A:Smith:123 Street:Ahmedabad:380001:9999999999
+Raj:B:Patel:456 Road:Surat:395007:8888888888
+Mayur:J:Dave:123 Bareja:Ahmedabad:382425:9283928392

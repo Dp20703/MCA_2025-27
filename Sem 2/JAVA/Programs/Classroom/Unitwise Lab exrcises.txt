@@ -1,0 +1,771 @@
+Unit-5 Java Generics
+
+
+Q-1 Design and implement a
+Java proUnit-5 Java Generics
+
+
+Q-1 Design and implement a
+Java program using a generic class BoxT that can store and
+retrieve values of different data types. The program should allow the user to select
+the data type at runtime (Integer, String, or Double) and perform
+operations on the selected type.
+
+
+The program must be menu-driven and support the following
+operations
+
+
+1.     Store a value in the
+box
+
+
+2.     Display the stored
+value
+
+
+3.     Exit the program
+
+
+Based on the user’s choice of data type, an appropriate generic
+object should be created, and operations should be performed accordingly.
+
+
+Q-2 Develop a Java program
+using generic classes and methods to create a flexible data management
+system. The program should
+
+
+Store different
+types of data using a generic container class T
+Use multiple
+type parameters T, U for handling
+paired data (e.g., ID and Name)
+Implement bounded
+generics to perform arithmetic operations only on numeric data
+Use wildcards
+to display and process elements from different collections
+
+
+
+The system should provide a menu-driven interface for storing,
+retrieving, and displaying data.
+
+
+ 
+
+
+Unit-8
+
+
+Q1. Write a menu-driven Java program to manage student records using ListStudent with attributes (id,
+name, marks). Perform the following operations
+
+
+Add student
+Display all students
+Search student by name
+Update student details using index
+Remove student by index
+Sort students based on marks
+Exit
+
+
+
+change
+
+
+Class name (Student → EmployeeProductBook)
+Variables (marks → salaryprice)
+
+
+
+Q2. Write a Java program to manage orders using ListOrder with attributes (id,
+itemName, amount). The program should
+
+
+Add order
+Display all orders
+Search order by item name
+Update order details
+Remove order by index
+Sort orders by amount
+
+
+
+Write a Java program to(
+
+
+Store
+student names in a HashSet
+
+Add
+duplicate names
+Display
+all names
+Show
+that duplicate entries are not stored
+
+
+
+
+
+
+
+
+
+
+Write a Java
+program to
+
+
+Store
+city names in a LinkedHashSet
+
+Add
+multiple city names including duplicates
+Display
+all cities
+Maintain
+insertion order
+
+
+
+
+
+
+
+
+
+
+Write a Java program to TreeSet (Sorted Data)
+
+
+Store
+integer values in a TreeSet
+
+Add
+elements
+Display
+elements in sorted order
+
+
+
+
+
+
+
+
+
+
+Write a Java program to
+
+
+Store
+name and phone number using HashMap
+
+Add
+multiple entries
+Display
+all entries
+Search
+phone number using name
+
+
+
+
+
+
+
+
+
+
+Write a Java program to HashMap (Update & Replace)
+
+
+Store
+product ID and name using HashMap
+
+Add
+entries
+Replace
+value of an existing key
+Display
+updated map
+
+
+
+
+
+
+
+
+
+
+Write a Java program to
+
+
+Store
+employee ID and name using TreeMap
+
+Add
+entries
+Display
+all entries in sorted order of keys
+
+
+
+
+
+
+
+
+
+
+Write a Java program to
+
+
+Use QueueString
+Add
+customer names
+Remove
+customers one by one using FIFO
+Display
+each removed customer
+
+
+
+
+
+
+
+
+
+
+ Write a Java
+program to
+
+
+Store
+integer values in a PriorityQueue
+
+Add
+elements
+Display
+elements in priority order
+
+
+
+
+
+
+
+
+
+
+Write a Java program to
+
+
+Use DequeInteger
+Add
+elements at both ends
+Remove
+elements from both ends
+Display
+final deque
+
+
+
+
+
+
+
+
+
+
+Write a Java program to
+
+
+Store integers
+in a List
+Convert
+the list into a Set
+to remove duplicates
+Display
+unique elements
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+Unit -9 Stream API
+
+
+Q-1 Write a simple using the Java Stream API
+to perform operations on a list of integers.
+
+The program should
+
+
+Display
+even numbers from the list
+Display
+odd numbers from the list
+Display
+square of each number
+Exit
+the program
+
+
+
+The operations must be performed using filter()map().
+
+
+
+
+
+
+
+
+
+Q-2 Write a simple using the Java Stream API
+to perform operations on a list of strings.(String Operations)
+
+The program should
+
+
+Display
+names starting with a specific character (e.g., 'S')
+Convert
+all names to uppercase
+Sort
+the list of names
+Count
+total number of names
+Exit
+the program
+
+
+
+Use filter()map()sorted()count().
+
+
+
+
+
+
+
+
+
+Q-3 Write a simple using
+the Java Stream API to perform aggregate
+operations on a list of integers.(aggregate Operations)
+
+
+The program should
+
+
+Find
+the sum of all elements
+Find
+the maximum element
+Store
+even numbers into a new list
+Exit
+the program
+
+
+
+Use reduce()max()collect()gram using a generic class BoxT that can store and
+retrieve values of different data types. The program should allow the user to select
+the data type at runtime (Integer, String, or Double) and perform
+operations on the selected type.
+
+
+The program must be menu-driven and support the following
+operations
+
+
+1.     Store a value in the
+box
+
+
+2.     Display the stored
+value
+
+
+3.     Exit the program
+
+
+Based on the user’s choice of data type, an appropriate generic
+object should be created, and operations should be performed accordingly.
+
+
+Q-2 Develop a Java program
+using generic classes and methods to create a flexible data management
+system. The program should
+
+
+Store different
+types of data using a generic container class T
+Use multiple
+type parameters T, U for handling
+paired data (e.g., ID and Name)
+Implement bounded
+generics to perform arithmetic operations only on numeric data
+Use wildcards
+to display and process elements from different collections
+
+
+
+The system should provide a menu-driven interface for storing,
+retrieving, and displaying data.
+
+
+ 
+
+
+Unit-8
+
+
+Q1. Write a menu-driven Java program to manage student records using ListStudent with attributes (id,
+name, marks). Perform the following operations
+
+
+Add student
+Display all students
+Search student by name
+Update student details using index
+Remove student by index
+Sort students based on marks
+Exit
+
+
+
+change
+
+
+Class name (Student → EmployeeProductBook)
+Variables (marks → salaryprice)
+
+
+
+Q2. Write a Java program to manage orders using ListOrder with attributes (id,
+itemName, amount). The program should
+
+
+Add order
+Display all orders
+Search order by item name
+Update order details
+Remove order by index
+Sort orders by amount
+
+
+
+Write a Java program to(
+
+
+Store
+student names in a HashSet
+
+Add
+duplicate names
+Display
+all names
+Show
+that duplicate entries are not stored
+
+
+
+
+
+
+
+
+
+
+Write a Java
+program to
+
+
+Store
+city names in a LinkedHashSet
+
+Add
+multiple city names including duplicates
+Display
+all cities
+Maintain
+insertion order
+
+
+
+
+
+
+
+
+
+
+Write a Java program to TreeSet (Sorted Data)
+
+
+Store
+integer values in a TreeSet
+
+Add
+elements
+Display
+elements in sorted order
+
+
+
+
+
+
+
+
+
+
+Write a Java program to
+
+
+Store
+name and phone number using HashMap
+
+Add
+multiple entries
+Display
+all entries
+Search
+phone number using name
+
+
+
+
+
+
+
+
+
+
+Write a Java program to HashMap (Update & Replace)
+
+
+Store
+product ID and name using HashMap
+
+Add
+entries
+Replace
+value of an existing key
+Display
+updated map
+
+
+
+
+
+
+
+
+
+
+Write a Java program to
+
+
+Store
+employee ID and name using TreeMap
+
+Add
+entries
+Display
+all entries in sorted order of keys
+
+
+
+
+
+
+
+
+
+
+Write a Java program to
+
+
+Use QueueString
+Add
+customer names
+Remove
+customers one by one using FIFO
+Display
+each removed customer
+
+
+
+
+
+
+
+
+
+
+ Write a Java
+program to
+
+
+Store
+integer values in a PriorityQueue
+
+Add
+elements
+Display
+elements in priority order
+
+
+
+
+
+
+
+
+
+
+Write a Java program to
+
+
+Use DequeInteger
+Add
+elements at both ends
+Remove
+elements from both ends
+Display
+final deque
+
+
+
+
+
+
+
+
+
+
+Write a Java program to
+
+
+Store integers
+in a List
+Convert
+the list into a Set
+to remove duplicates
+Display
+unique elements
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+Unit -9 Stream API
+
+
+Q-1 Write a simple using the Java Stream API
+to perform operations on a list of integers.
+
+The program should
+
+
+Display
+even numbers from the list
+Display
+odd numbers from the list
+Display
+square of each number
+Exit
+the program
+
+
+
+The operations must be performed using filter()map().
+
+
+
+
+
+
+
+
+
+Q-2 Write a simple using the Java Stream API
+to perform operations on a list of strings.(String Operations)
+
+The program should
+
+
+Display
+names starting with a specific character (e.g., 'S')
+Convert
+all names to uppercase
+Sort
+the list of names
+Count
+total number of names
+Exit
+the program
+
+
+
+Use filter()map()sorted()count().
+
+
+
+
+
+
+
+
+
+Q-3 Write a simple using
+the Java Stream API to perform aggregate
+operations on a list of integers.(aggregate Operations)
+
+
+The program should
+
+
+Find
+the sum of all elements
+Find
+the maximum element
+Store
+even numbers into a new list
+Exit
+the program
+
+
+
+Use reduce()max()collect()
