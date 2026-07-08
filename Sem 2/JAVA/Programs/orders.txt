@@ -1,0 +1,3 @@
+Pizza - Rs.250
+Burger - Rs.120
+Total Bill = Rs.370
