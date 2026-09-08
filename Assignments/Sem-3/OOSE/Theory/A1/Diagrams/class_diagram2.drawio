@@ -1,0 +1,202 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="XXnvnIHmojugEEHEF5pT">
+    <mxGraphModel dx="2457" dy="1351" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=20;fontStyle=1;fontColor=#333333;align=center;verticalAlign=middle;" value="Intelligent Document and Government Service Management System — Class Diagram" vertex="1">
+          <mxGeometry height="40" width="1180" x="220" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="user" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;User&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;# userId : String&lt;br&gt;# name : String&lt;br&gt;# email : String&lt;br&gt;# phone : String&lt;hr&gt;+ login()&lt;br&gt;+ logout()&lt;br&gt;+ updateProfile()" vertex="1">
+          <mxGeometry height="250" width="240" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="citizen" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;Citizen&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ citizenNo : String&lt;hr&gt;+ register()&lt;br&gt;+ submitApplication()&lt;br&gt;+ uploadDocument()&lt;br&gt;+ trackApplication()" vertex="1">
+          <mxGeometry height="190" width="240" x="40" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="officer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;GovernmentOfficer&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ officerId : String&lt;br&gt;+ department : String&lt;hr&gt;+ reviewApplication()&lt;br&gt;+ verifyDetails()&lt;br&gt;+ forwardForApproval()" vertex="1">
+          <mxGeometry height="210" width="240" x="40" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="authority" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;ApprovalAuthority&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ authorityId : String&lt;br&gt;+ designation : String&lt;hr&gt;+ approve()&lt;br&gt;+ reject()&lt;br&gt;+ provideReason()" vertex="1">
+          <mxGeometry height="200" width="240" x="40" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="account" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;UserAccount&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;- username : String&lt;br&gt;- passwordHash : String&lt;br&gt;- role : Role&lt;br&gt;- status : AccountStatus&lt;hr&gt;+ authenticate()&lt;br&gt;+ authorize()" vertex="1">
+          <mxGeometry height="230" width="280" x="400" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="application" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;Application&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ applicationId : String&lt;br&gt;+ submissionDate : Date&lt;br&gt;+ status : ApplicationStatus&lt;br&gt;+ priority : PriorityLevel&lt;br&gt;+ rejectionReason : String&lt;hr&gt;+ create()&lt;br&gt;+ validate()&lt;br&gt;+ updateStatus()&lt;br&gt;+ getStatus()" vertex="1">
+          <mxGeometry height="300" width="300" x="400" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="document" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;Document&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ documentId : String&lt;br&gt;+ documentType : String&lt;br&gt;+ filePath : String&lt;br&gt;+ verificationStatus : VerificationStatus&lt;hr&gt;+ upload()&lt;br&gt;+ classify()&lt;br&gt;+ extractData()&lt;br&gt;+ replace()" vertex="1">
+          <mxGeometry height="260" width="300" x="400" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="approval" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;Approval&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ approvalId : String&lt;br&gt;+ level : int&lt;br&gt;+ decision : ApprovalDecision&lt;br&gt;+ decisionDate : Date&lt;br&gt;+ remarks : String&lt;hr&gt;+ approve()&lt;br&gt;+ reject()" vertex="1">
+          <mxGeometry height="260" width="300" x="400" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="appservice" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;ApplicationService&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ submitApplication()&lt;br&gt;+ validateApplication()&lt;br&gt;+ processDocuments()&lt;br&gt;+ assignPriority()&lt;br&gt;+ startApprovalWorkflow()&lt;br&gt;+ updateStatus()" vertex="1">
+          <mxGeometry height="260" width="300" x="820" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ml" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;NLPMLService&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ classifyDocument()&lt;br&gt;+ extractInformation()&lt;br&gt;+ calculatePriority()&lt;br&gt;+ analyzeApplication()" vertex="1">
+          <mxGeometry height="220" width="300" x="820" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="verification" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;VerificationService&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ verifyDocument()&lt;br&gt;+ verifyIdentity()&lt;br&gt;+ verifyExtractedData()&lt;br&gt;+ requestAdditionalVerification()" vertex="1">
+          <mxGeometry height="230" width="300" x="820" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="notification" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;NotificationService&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ sendStatusUpdate()&lt;br&gt;+ sendCorrectionRequest()&lt;br&gt;+ sendApprovalNotice()&lt;br&gt;+ sendRejectionNotice()" vertex="1">
+          <mxGeometry height="230" width="300" x="820" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="audit" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;AuditLog&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ logId : String&lt;br&gt;+ timestamp : DateTime&lt;br&gt;+ action : String&lt;br&gt;+ actorId : String&lt;br&gt;+ details : String&lt;hr&gt;+ recordActivity()&lt;br&gt;+ searchLogs()" vertex="1">
+          <mxGeometry height="240" width="300" x="820" y="1390" as="geometry" />
+        </mxCell>
+        <mxCell id="service" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;GovernmentService&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ serviceId : String&lt;br&gt;+ serviceName : String&lt;br&gt;+ department : String&lt;br&gt;+ requiredDocuments : List&lt;hr&gt;+ publishService()&lt;br&gt;+ updateRequirements()&lt;br&gt;+ getRequiredDocuments()" vertex="1">
+          <mxGeometry height="250" width="300" x="400" y="1510" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=8;spacingLeft=10;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=13;" value="&lt;b&gt;&lt;font style=&quot;font-size:16px&quot;&gt;AuthenticationService&lt;/font&gt;&lt;/b&gt;&lt;hr&gt;+ login()&lt;br&gt;+ logout()&lt;br&gt;+ verifyCredentials()&lt;br&gt;+ checkPermission()&lt;br&gt;+ createSession()" vertex="1">
+          <mxGeometry height="220" width="240" x="40" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="gen" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontColor=#333333;fontSize=12;" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Blue = Users / Services&lt;br&gt;Green = Core domain entities&lt;br&gt;Yellow = Workflow / approval&lt;br&gt;Purple = Processing services&lt;br&gt;Grey = Security / audit&lt;br&gt;Red = Notification" vertex="1">
+          <mxGeometry height="180" width="240" x="1160" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="citizen" style="endArrow=block;endFill=0;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="user" value="inherits">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="officer" style="endArrow=block;endFill=0;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="user" value="inherits">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="296" y="865" />
+              <mxPoint x="296" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="authority" style="endArrow=block;endFill=0;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="user" value="inherits">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="1170" />
+              <mxPoint x="310" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="user" style="endArrow=diamond;endFill=1;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="account" value="owns">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="338" y="255" />
+              <mxPoint x="338" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="citizen" style="endArrow=none;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="application" value="submits">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="338" y="565" />
+              <mxPoint x="338" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="application" style="endArrow=none;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="service" value="for service">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="590" />
+              <mxPoint x="730" y="1635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="application" style="endArrow=diamond;endFill=1;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="document" value="contains">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="application" style="endArrow=diamond;endFill=1;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="approval" value="has approvals">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="716" y="590" />
+              <mxPoint x="716" y="1290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="officer" style="endArrow=none;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="application" value="reviews">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="366" y="865" />
+              <mxPoint x="366" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="officer" style="endArrow=none;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="authority" value="forwards">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="authority" style="endArrow=none;html=1;strokeColor=#555555;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="approval" value="decides">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="1290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="appservice" style="dashed=1;endArrow=open;html=1;strokeColor=#7a5a9e;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="application" value="processes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="260" />
+              <mxPoint x="750" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="appservice" style="dashed=1;endArrow=open;html=1;strokeColor=#7a5a9e;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="ml" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="appservice" style="dashed=1;endArrow=open;html=1;strokeColor=#7a5a9e;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="verification" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="260" />
+              <mxPoint x="1150" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="ml" style="dashed=1;endArrow=open;html=1;strokeColor=#7a5a9e;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="document" value="uses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="764" y="580" />
+              <mxPoint x="764" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="verification" style="dashed=1;endArrow=open;html=1;strokeColor=#7a5a9e;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="document" value="verifies">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="778" y="885" />
+              <mxPoint x="778" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="notification" style="dashed=1;endArrow=open;html=1;strokeColor=#b85450;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="citizen" value="notifies">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="1195" />
+              <mxPoint x="750" y="780" />
+              <mxPoint x="324" y="780" />
+              <mxPoint x="324" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="appservice" style="dashed=1;endArrow=open;html=1;strokeColor=#666666;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="audit" value="records">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1136" y="260" />
+              <mxPoint x="1136" y="1510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="auth" style="dashed=1;endArrow=open;html=1;strokeColor=#666666;edgeStyle=orthogonalEdgeStyle;rounded=0;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" target="account" value="authenticates">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="352" y="1540" />
+              <mxPoint x="352" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
