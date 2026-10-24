@@ -1,0 +1,46 @@
+@startuml
+left to right direction
+
+actor Student
+actor Professor
+actor "University Administrator" as Admin
+actor "Billing System" as Billing
+
+rectangle "Online Course Registration System" {
+    ' Student Use Cases
+    usecase "View Course Catalog" as UC1
+    usecase "Register for Course" as UC2
+    usecase "Drop Course" as UC3
+    
+    ' Professor Use Cases
+    usecase "View Student Roster" as UC4
+    usecase "Input Final Grades" as UC5
+    
+    ' Admin Use Cases
+    usecase "Manage Courses (Add/Edit/Delete)" as UC6
+    usecase "Manage Registration Period" as UC7
+    usecase "Manage User Accounts" as UC8
+    
+    ' System / Billing Use Cases
+    usecase "Calculate & Send Tuition Fees" as UC9
+}
+
+' Student Relationships
+Student --> UC1
+Student --> UC2
+Student --> UC3
+
+' Professor Relationships
+Professor --> UC4
+Professor --> UC5
+
+' Admin Relationships
+Admin --> UC6
+Admin --> UC7
+Admin --> UC8
+
+' System / Billing Relationships
+UC2 ..> UC9 : <<include>>
+UC3 ..> UC9 : <<include>>
+UC9 --> Billing
+@enduml
